@@ -1,0 +1,410 @@
+﻿/*nav bar*/
+
+        /* Add a color to the active/current link */
+.topnav a.active {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+.fullnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav ul li a {
+    color: black;
+    background-color: white;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 0px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Agency FB'; 
+}
+
+    nav ul li a:hover {
+        background-color: white;
+        color: black;
+        text-decoration: underline;
+    }
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: auto;
+    top: 70px;
+}
+
+.footerlink{
+    color: white;
+}
+
+#insidefooter {
+    text-align: center;
+    padding: 25px;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: auto;
+    top: -3px;
+}
+
+/*   home page pic*/
+.pic{
+    width: 100%;
+    margin-top: 80px;
+}
+
+/*home page text*/
+.headlinehomepage {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Agency FB';
+    margin-top: 30px;
+}
+
+.part_1 {
+    font-family: 'Arial';
+    text-align: center;
+    margin: 50px 200px;
+    font-size: 20px;
+}
+
+
+
+.email {
+    float: left;
+}
+
+
+/*picture gallery*/ 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+    flex: 25%;
+    max-width: 100%;
+    padding: 0px 25px;
+}
+
+.column1 img {
+  margin-top:20px;
+  vertical-align: middle;
+  width: 100%;
+  }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column1 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column1 {
+        flex: 200px;
+        max-width: 100%;
+    }
+}
+
+.currentpic:hover{
+    opacity: 70%;
+}
+
+#h1inside1 {
+    text-align: center;
+    margin: 30px 100px 50px 100px;
+    font-size: 80px;
+    font-family: 'Agency FB';
+}
+.description {
+    font-size: 40px;
+    font-family: 'Agency FB';
+    color: black;
+    text-decoration: none;
+}
+
+#currentdescription:hover {
+    text-decoration: underline;
+}
+
+/*recpies page*/
+.insidepage {
+    width: 600px;
+    position: inherit;
+    margin: 50px 0px 0px 0px;
+}
+
+section {
+    float:right;
+
+}
+    section h1 {
+        margin: 80px 0px 0px 0px;
+        font-family: 'Agency FB';
+        font-size: 50px;
+    }
+
+    section h2 {
+        margin: 30px 0px 0px 0px;
+        font-family: 'Arial';
+    }
+
+    section ul {
+      margin: 0px 425px 0px 0px;
+    }
+
+    section h3 {
+        margin: 30px 0px 0px 0px;
+        font-family: 'Arial';
+    }
+
+    section ul li {
+        margin: 15px;
+        font-family: 'Agency FB';
+        font-size: 20px;
+    }
+
+    section p {
+        font-family: Arial;
+        margin: 20px 0px 0px 0px;
+        font-family: 'Agency FB';
+        font-size: 18px;
+    }
+
+#about_t {
+    text-align: center;
+    line-height: 30px;
+}
+
+/*    breadcrumbs style*/
+/* Style the list */
+ul.breadcrumb {
+    padding: 5px 0px;
+    list-style: none;
+    margin: 80px 0px 0px 60px;
+}
+
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 15px;
+        float: left;
+        font-family: 'Agency FB';
+    }
+
+        /* Add a slash symbol (/) before/behind each list item */
+        ul.breadcrumb li + li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+
+        /* Add a color to all links inside the list */
+        ul.breadcrumb li a {
+            color: black;
+            text-decoration: none;
+        }
+
+            /* Add a color on mouse-over */
+            ul.breadcrumb li a:hover {
+                text-decoration: underline;
+            }
+
+ul.breadcrumb2 {
+    padding: 5px 0px;
+    list-style: none;
+    margin: 80px 0px 0px 80px;
+    float: right;
+    position: fixed;
+    color: white;
+}
+
+/* Display list items side by side */
+ul.breadcrumb2 li {
+    display: inline;
+    font-size: 15px;
+    float: left;
+    font-family: 'Agency FB';
+}
+
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.breadcrumb2 li + li:before {
+        padding: 8px;
+        color: white;
+        content: "/\00a0";
+    }
+
+    /* Add a color to all links inside the list */
+    ul.breadcrumb2 li a {
+        color: white;
+        text-decoration: none;
+    }
+
+        /* Add a color on mouse-over */
+        ul.breadcrumb2 li a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            text-align:center;
+        }
+
+#formbtn {
+    background-color: white;
+    border: solid 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+ul.site-map {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    margin: 0px 0px 0px 550px;
+}
+
+    ul.site-map li {
+        margin-bottom: 10px;
+    }
+
+    ul.site-map ul {
+        margin-left: 20px;
+    }
+
+    ul.site-map a {
+        text-decoration: none;
+        color: #333;
+    }
+
+        ul.site-map a:hover {
+            text-decoration: underline;
+        }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*הגדרות גלריה */
+
+/* כל הגלריה */
+.myfoodgallery {
+    position: relative;
+    width: 300px;
+    margin: 20px 480px;
+}
+
+/* הסתרה של כל התמונות הגדולות  */
+.fullslide {
+    display: none;
+}
+
+
+
+/* מספר */
+.nums {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* כיתוב */
+.caption-container {
+    text-align: center;
+    background-color: white;
+    padding: 2px 16px;
+    color: black;
+}
+
+#caption {
+    font-family: 'Agency FB';
+}
+
+/* שורה של הגלריה*/
+.gallery_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*עמודה \ כל תמונה בפני עצמה */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.smallpic {
+    opacity: 0.6;
+}
+
+    .active,
+    .smallpic:hover {
+        opacity: 1;
+    }
+
+/* עכבר במעבר על הגלריה */
+.pointer {
+    cursor: pointer;
+}
+
+/* כפתורים של קודם והבא */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: black;
+}
+
+/* כפתור הקודם */
+.prev {
+    right: 300px;
+    border-radius: 30px 0 0 30px;
+}
+
+/* כפתור הבא */
+.next {
+    left: 300px;
+    border-radius: 0 30px 30px 0;
+}
+
+    /* מעבר עכבר על הכפתורים*/
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+

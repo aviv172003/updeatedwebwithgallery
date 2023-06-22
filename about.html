@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>about</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <div>
+        <nav class="fullnav" aria-label="main-nav">
+            <ul class="topnav">
+                <li><a href="homepage.html"><img src="logo.png" alt="logo" /></a></li>
+                <li><a href="italian.html">Italian</a></li>
+                <li><a href="asian.html">Asian</a></li>
+                <li><a href="israeli.html">Israeli</a></li>
+                <li><a href="dessert.html">Dessert</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <ul class="breadcrumb">
+            <li><a href="homepage.html">home</a></li>
+            <li>about</li>
+        </ul>
+    </div>
+
+    <h1 id="h1inside1">ABOUT OUR WEBSITE:</h1>
+    <p id="about_t">
+        this website was developed aviv mizrachi hamtzani, <br /> as the final assignment of "internt website development" course <br /> in the second semester of the first year of my dgree in "lerning technology`s" in "holon's institute of technology". <br />
+        this website was meant to look like resaurant menu <br /> but when you click on one of the food pictures you go to a recpie <br /> this way the user can almost feel like he`s choosing what to eat in a restaurant and make coocking more of a fun experience
+        <br />
+        visit our map site for more information abou what`s in here:
+        <br />
+        <a href="mapsite.html">map site</a>
+        <br />
+        <br />
+        :מתכונים מעניינים שתוכלו למצוא אצלנו באתר
+    </p>
+
+    <!-- תיבה של כל הגלריה -->
+    <div class="myfoodgallery">
+        <!-- תמונות גדולות ומספרים -->
+        <div class="fullslide">
+            <div class="nums">1 / 6</div>
+            <img src="asian_food/ווק.jpg" alt="wok" style="width: 300px" />
+        </div>
+
+        <div class="fullslide">
+            <div class="nums">2 / 6</div>
+            <img src="israeli_food/לביבות ירק ישראלי.jpg" alt="vegetable latkes" style="width: 300px" />
+        </div>
+
+        <div class="fullslide">
+            <div class="nums">3 / 6</div>
+            <img src="italian_food/pizza.jpg" alt="italian pizza" style="width: 300px" />
+        </div>
+
+        <div class="fullslide">
+            <div class="nums">4 / 6</div>
+            <img src="asian_food/רול ויאטנמי.jpg" alt="vietnam roll" style="width: 300px" />
+        </div>
+
+        <div class="fullslide">
+            <div class="nums">5 / 6</div>
+            <img src="israeli_food/שקשוקה ישראלי.jpg" alt="israeli shakshuka" style="width: 300px" />
+        </div>
+
+        <div class="fullslide">
+            <div class="nums">6 / 6</div>
+            <img src="italian_food/redpasta.jpg" alt="tomato sauce pasta" style="width: 300px" />
+        </div>
+
+        <!-- כפתורים -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+
+        <!-- תיבה לתמונות -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- תמונות קטנות וטקסט -->
+        <div class="gallery_row">
+
+            <div class="column">
+                <img class="smallpic pointer"
+                     src="asian_food/ווק.jpg"
+                     style="width: 100%"
+                     onclick="GoToThiSlide(1)"
+                     alt="wok" />
+            </div>
+
+            <div class="column">
+                <img class="smallpic pointer"
+                     src="israeli_food/לביבות ירק ישראלי.jpg"
+                     style="width: 100%"
+                     onclick="GoToThiSlide(2)"
+                     alt="vegetable latkes" />
+            </div>
+
+            <div class="column">
+                <img class="smallpic pointer"
+                     src="italian_food/pizza.jpg"
+                     style="width: 100%"
+                     onclick="GoToThiSlide(3)"
+                     alt="italian pizza" />
+            </div>
+
+            <div class="column">
+                <img class="smallpic pointer"
+                     src="asian_food/רול ויאטנמי.jpg"
+                     style="width: 100%"
+                     onclick="GoToThiSlide(4)"
+                     alt="vietnam roll" />
+            </div>
+
+            <div class="column">
+                <img class="smallpic pointer"
+                     src="israeli_food/שקשוקה ישראלי.jpg"
+                     style="width: 100%"
+                     onclick="GoToThiSlide(5)"
+                     alt="israeli shakshuka" />
+            </div>
+
+            <div class="column">
+                <img class="smallpic pointer"
+                     src="italian_food/redpasta.jpg"
+                     style="width: 100%"
+                     onclick="GoToThiSlide(6)"
+                     alt="tomato sauce pasta" />
+            </div>
+        </div>
+    </div>
+
+    <!-- קישור לקוד -->
+    <script src="jScripts/JavaScript.js"></script>
+
+    <footer>
+        <p>made by: Aviv mizrachi</p>
+        <a class="footerlink" href="contact.html">contact us</a>
+    </footer>
+</body>
+</html>

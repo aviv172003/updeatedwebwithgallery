@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>contact</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <nav class="fullnav" aria-label="main-nav">
+        <ul class="topnav">
+            <li><a href="homepage.html"><img src="logo.png" alt="logo" /></a></li>
+            <li><a href="italian.html">Italian</a></li>
+            <li><a href="asian.html">Asian</a></li>
+            <li><a href="israeli.html">Israeli</a></li>
+            <li><a href="dessert.html">Dessert</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <ul class="breadcrumb">
+        <li><a href="homepage.html">home</a></li>
+        <li>about</li>
+    </ul>
+
+    <h1 id="h1inside1">CONTACT US:</h1>
+
+
+    <form action="process_form.php" method="POST">
+
+        <label for="fullname">Full Name:</label>
+        <br />
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <br />
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <br />
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input id="formbtn" type="submit" value="Submit">
+    </form>
+    <footer>
+        <p>made by: Aviv mizrachi</p>
+        <a class="footerlink" href="contact.html">contact us</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="JavaScript.js"></script>
+</body>
+</html>
